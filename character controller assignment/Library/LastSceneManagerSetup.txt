@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/Character Controller Exercise/Character Controller Exercise.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
