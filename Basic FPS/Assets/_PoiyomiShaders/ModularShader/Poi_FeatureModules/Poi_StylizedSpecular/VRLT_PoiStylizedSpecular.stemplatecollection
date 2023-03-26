@@ -1,0 +1,131 @@
+#T#PoiStylizedSpecularProperties
+[HideInInspector] m_start_stylizedSpec (" Stylized Specular--{reference_property:_StylizedSpecular}", Float) = 0
+[HideInInspector][ThryToggle(POI_STYLIZED_StylizedSpecular)]_StylizedSpecular ("Enable", Float) = 0
+
+[ThryTexture]_StylizedSpecularMap ("Specular Map--{reference_properties:[_StylizedSpecularMapPan, _StylizedSpecularMapUV]}", 2D) = "white" { }
+[HideInInspector][Vector2]_StylizedSpecularMapPan ("Panning", Vector) = (0, 0, 0, 0)
+[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos XZ, 5, Polar UV, 6, Distorted UV, 7)]_StylizedSpecularMapUV ("UV", Int) = 0
+_StylizedSpecularTint ("Tint", Color) = (1, 1, 1, 1)
+_StylizedSpecularStrength ("Strength", Float) = 1
+_StylizedSpecularFeather ("Feather", Range(0, 1)) = 0
+[ToggleUI] _UseLightColor ("Use Light Color", Float) = 1
+_StylizedSpecularAdd ("Add To Color", Range(0, 1)) = 1
+_StylizedSpecularReplace ("Replace Color", Range(0, 1)) = 0
+[Space(8)]
+
+[ThryHeaderLabel(Layer 1, 13)]
+[ThryTexture]_StylizedSpecularOptMap1 ("Specular Opt Map 1--{reference_properties:[_StylizedSpecularOptMap1Pan, _StylizedSpecularOptMap1UV, _StylizedSpecularOptMap1ToolTip]}", 2D) = "white" { }
+[HideInInspector][Helpbox(1)]_StylizedSpecularOptMap1ToolTip ("r: noise, g: noise mask, b: feather", Int) = 0
+[HideInInspector][Vector2]_StylizedSpecularOptMap1Pan ("Panning", Vector) = (0, 0, 0, 0)
+[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos XZ, 5, Polar UV, 6, Distorted UV, 7)]_StylizedSpecularOptMap1UV ("UV", Int) = 0
+_Layer1Strength ("Layer 1 Strength", Range(0, 1)) = 1
+_Layer1Size ("Layer 1 Size", Range(0, 1)) = 0.2
+[Space(8)]
+
+[ThryHeaderLabel(Layer 2, 13)]
+[ThryTexture]_StylizedSpecularOptMap2 ("Specular Opt Map 2--{reference_properties:[_StylizedSpecularOptMap2Pan, _StylizedSpecularOptMap2UV, _StylizedSpecularOptMap2ToolTip], reference_property:_UseSpecularOptMap2}", 2D) = "white" { }
+[HideInInspector][ToggleUI]_UseSpecularOptMap2 ("Use Opt Map 2", Int) = 1
+[HideInInspector][Helpbox(1)]_StylizedSpecularOptMap2ToolTip ("r: noise, g: noise mask, b: feather", Int) = 0
+[HideInInspector][Vector2]_StylizedSpecularOptMap2Pan ("Panning", Vector) = (0, 0, 0, 0)
+[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos XZ, 5, Polar UV, 6, Distorted UV, 7)]_StylizedSpecularOptMap2UV ("UV", Int) = 0
+_Layer2Strength ("Layer 2 Strength", Range(0, 1)) = 0.5
+_Layer2Size ("Layer 2 Size", Range(0, 1)) = 0.5
+
+[HideInInspector] m_end_stylizedSpec ("", Float) = 0
+#T#PoiStylizedSpecularKeywords
+#pragma shader_feature_local POI_STYLIZED_StylizedSpecular
+
+#T#PoiStylizedSpecularVariables
+#ifdef POI_STYLIZED_StylizedSpecular
+	#if defined(PROP_StylizedSpecularMAP) || !defined(OPTIMIZER_ENABLED)
+		Texture2D _StylizedSpecularMap;
+	#endif
+	float4 _StylizedSpecularMap_ST;
+	float2 _StylizedSpecularMapPan;
+	float _StylizedSpecularMapUV;
+
+	#if defined(PROP_StylizedSpecularOPTMAP1) || !defined(OPTIMIZER_ENABLED)
+		Texture2D _StylizedSpecularOptMap1;
+	#endif
+	float4 _StylizedSpecularOptMap1_ST;
+	float2 _StylizedSpecularOptMap1Pan;
+	float _StylizedSpecularOptMap1UV;
+
+	#if defined(PROP_StylizedSpecularOPTMAP2) || !defined(OPTIMIZER_ENABLED)
+		Texture2D _StylizedSpecularOptMap2;
+	#endif
+	float4 _StylizedSpecularOptMap2_ST;
+	float2 _StylizedSpecularOptMap2Pan;
+	float _StylizedSpecularOptMap2UV;
+
+	float _UseLightColor;
+	float _Layer1Size;
+	float _Layer2Size;
+	float _StylizedSpecularFeather;
+	float _SpecToSpec;
+	float _UseSpecShadowTweak;
+	float _SpecShadowTweak;
+	float _Layer1Strength;
+	float _Layer2Strength;
+	float4 _StylizedSpecularTint;
+	float _StylizedSpecularStrength;
+	float _StylizedSpecularAdd;
+	float _StylizedSpecularReplace;
+
+	float _UseSpecularOptMap2;
+#endif
+
+#T#PoiStylizedSpecularFunctions
+#ifdef POI_STYLIZED_StylizedSpecular
+	void stylizedSpecular(inout PoiFragData pfd, in PoiCam pc, in PoiLight pl, in PoiMesh pm)
+	{
+		float feathering = lerp(0, 0.015, _StylizedSpecularFeather);
+		float specArea = 0.5 * dot(pl.halfDir, pm.normals[1]);
+		#if defined(PROP_StylizedSpecularMAP) || !defined(OPTIMIZER_ENABLED)
+			float3 specularMap = POI2D_SAMPLER_PAN(_StylizedSpecularMap, _MainTex, poiUV(pm.uv[_StylizedSpecularMapUV], _StylizedSpecularMap_ST), _StylizedSpecularMapPan);
+		#else
+			float3 specularMap = 1;
+		#endif
+
+		// Spec 1
+		// r: noise, g: noise mask, b: feather
+		#if defined(PROP_StylizedSpecularOPTMAP1) || !defined(OPTIMIZER_ENABLED)
+			float4 specularOptMap1 = POI2D_SAMPLER_PAN(_StylizedSpecularOptMap1, _MainTex, poiUV(pm.uv[_StylizedSpecularOptMap1UV], _StylizedSpecularOptMap1_ST), _StylizedSpecularOptMap1Pan);
+		#else
+			float4 specularOptMap1 = 1;
+		#endif
+		float spec1 = saturate(specArea - saturate((1 - specularOptMap1.r) * specularOptMap1.g));
+		float layer1Size = lerp(0.826, 1, _Layer1Size);
+		float specMask1 = pow(spec1, exp2(lerp(11, 1, layer1Size)));
+		specMask1 = saturate((specMask1 - 0.01) / (saturate(specularOptMap1.b * max(0.00005, feathering)))) * _Layer1Strength;
+
+		// Spec 2
+		float specMask2 = 0;
+		if (_UseSpecularOptMap2)
+		{
+			#if defined(PROP_StylizedSpecularOPTMAP1) || !defined(OPTIMIZER_ENABLED)
+				float4 specularOptMap2 = POI2D_SAMPLER_PAN(_StylizedSpecularOptMap2, _MainTex, poiUV(pm.uv[_StylizedSpecularOptMap2UV], _StylizedSpecularOptMap2_ST), _StylizedSpecularOptMap2Pan);
+			#else
+				float4 specularOptMap2 = 1;
+			#endif
+			float spec2 = saturate(specArea - saturate((1 - specularOptMap2.r) * specularOptMap2.g));
+			float layer2Size = lerp(0.826, 1, _Layer2Size);
+			specMask2 = pow(spec2, exp2(lerp(11, 1, layer2Size)));
+			
+			specMask2 = saturate((specMask2 - 0.01) / (saturate(specularOptMap2.b * max(0.00005, feathering)))) * _Layer2Strength;
+		}
+
+		float specMask = saturate(specMask1 + specMask2);
+		float3 specular = specularMap * _StylizedSpecularTint * lerp(1, pl.directColor, _UseLightColor) * specMask * pl.occlusion * pl.attenuation * _StylizedSpecularStrength;
+		
+		pfd.emission += specular * _StylizedSpecularAdd;
+		pfd.baseColor = lerp(pfd.baseColor, specularMap * _StylizedSpecularTint * lerp(1, pl.directColor, _UseLightColor), saturate(specMask * pl.occlusion * pl.attenuation * _StylizedSpecularStrength * _StylizedSpecularReplace));
+
+		//pfd.baseColor = _StylizedSpecularStrength;
+	}
+#endif
+
+#T#PoiStylizedSpecularFunctionCalls
+#ifdef POI_STYLIZED_StylizedSpecular
+	stylizedSpecular(poiFragData, poiCam, poiLight, poiMesh);
+#endif

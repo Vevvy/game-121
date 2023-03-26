@@ -1,0 +1,68 @@
+#T#PoiVertexOptionsProperties
+[HideInInspector] m_start_vertexManipulation ("Vertex Offset--{reference_property:_VertexManipulationsEnabled, button_help:{text:Tutorial,action:{type:URL,data:https://www.youtube.com/watch?v=x728WN50JeA&list=PL4_Gy3VRJSmbXfQSldzUiChgABQsoBlLw},hover:YouTube}}", Float) = 0
+[HideInInspector][ThryToggle(AUTO_EXPOSURE)]_VertexManipulationsEnabled ("Enabled", Float) = 0
+[Vector3]_VertexManipulationLocalTranslation ("Local Translation", Vector) = (0, 0, 0, 1)
+[Vector3]_VertexManipulationLocalRotation ("Local Rotation", Vector) = (0, 0, 0, 1)
+_VertexManipulationLocalScale ("Local Scale", Vector) = (1, 1, 1, 1)
+[Vector3]_VertexManipulationWorldTranslation ("World Translation", Vector) = (0, 0, 0, 1)
+_VertexManipulationHeight ("Vertex Height", Float) = 0
+_VertexManipulationHeightMask ("Height Map", 2D) = "white" { }
+[HideInInspector][Vector2]_VertexManipulationHeightPan ("Panning", Vector) = (0, 0, 0, 0)
+[HideInInspector][Enum(UV0, 0, UV1, 1, UV2, 2, UV3, 3)] _VertexManipulationHeightUV ("UV", Int) = 0
+_VertexManipulationHeightBias ("Mask Bias", Range(0, 1)) = 0
+[ToggleUI]_VertexRoundingEnabled ("Rounding Enabled", Float) = 0
+_VertexRoundingDivision ("Division Amount", Float) = 500
+[HideInInspector] m_end_vertexManipulation ("Vertex Offset", Float) = 0
+
+#T#PoiVertexOptionsKeywords
+#pragma shader_feature AUTO_EXPOSURE
+
+#T#PoiVertexOptionsVariables
+#ifdef AUTO_EXPOSURE
+    float4 _VertexManipulationLocalTranslation;
+    float4 _VertexManipulationLocalRotation;
+    float4 _VertexManipulationLocalScale;
+    float4 _VertexManipulationWorldTranslation;
+    float _VertexManipulationHeight;
+    sampler2D _VertexManipulationHeightMask;
+    float4 _VertexManipulationHeightMask_ST;
+    float2 _VertexManipulationHeightMaskPan;
+    float _VertexManipulationHeightMaskUV;
+    float _VertexManipulationHeightBias;
+    float _VertexRoundingEnabled;
+    float _VertexRoundingDivision;
+#endif
+
+/*
+Texture2D ;
+float4 _ST;
+float2 Pan;
+float UV;
+*/
+
+#T#PoiVertexOptionsInputModImplementation
+#ifdef AUTO_EXPOSURE
+        // Local Transformation
+        v.normal = rotate_with_quaternion(v.normal, _VertexManipulationLocalRotation.xyz);
+        v.tangent.xyz = rotate_with_quaternion(v.tangent.xyz, _VertexManipulationLocalRotation.xyz);
+        v.vertex = transform(v.vertex, _VertexManipulationLocalTranslation, _VertexManipulationLocalRotation, _VertexManipulationLocalScale);
+#endif
+
+#T#PoiVertexOptionsVertexModImplementation
+#ifdef AUTO_EXPOSURE
+    #if defined(PROP_VERTEXMANIPULATIONHEIGHTMASK) || !defined(OPTIMIZER_ENABLED)
+        float3 heightOffset = (tex2Dlod(_VertexManipulationHeightMask, float4(TRANSFORM_TEX(o.uv[0], _VertexManipulationHeightMask) + _VertexManipulationHeightMaskPan * _Time.x, 0, 0)).r - _VertexManipulationHeightBias) * _VertexManipulationHeight * o.normal;
+    #else
+        float3 heightOffset = _VertexManipulationHeight * o.normal;
+    #endif
+    worldOffset += _VertexManipulationWorldTranslation.xyz/* * _VertexManipulationWorldTranslation.w*/ + heightOffset;
+    localOffset += mul(unity_WorldToObject, _VertexManipulationWorldTranslation.xyz + heightOffset).xyz;
+
+    // rounding
+    UNITY_BRANCH
+    if (_VertexRoundingEnabled)
+    {
+        o.worldPos.xyz = (ceil(o.worldPos.xyz * _VertexRoundingDivision) / _VertexRoundingDivision) - 1 / _VertexRoundingDivision * .5;
+        o.localPos = mul(unity_WorldToObject, o.worldPos);
+    }
+#endif

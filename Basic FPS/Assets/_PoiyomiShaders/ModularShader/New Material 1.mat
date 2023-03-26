@@ -1,0 +1,263 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Material 1
+  m_Shader: {fileID: 4800000, guid: 7ddb6b17370686d439cae9f9aff3f7a9, type: 3}
+  m_ShaderKeywords: POI_LIGHT_DATA_ADDITIVE_ENABLE POI_VERTEXLIGHT_ON STYLIZED_SPECULAR
+    VIGNETTE_MASKED _EMISSIVE_SIMPLE _LIGHTINGMODE_FLAT _OUTLINE_NML
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    OptimizedShaderFolder: New Material 1
+    OriginalShader: .poiyomi/ProV8a
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _1st_HighColorOptMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _1st_ShadeMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _1st_SpecularOptMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _2nd_HighColorOptMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _2nd_SpecularOptMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BakedNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseOptMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CombinedMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HighColorMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HighColorOptMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: bb7711dde80ffc949b3171744eb92cdd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MatCapMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MatCap_Sampler:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OutlineMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Set_MatcapMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecularMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecularOptMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _1st2nd_Shades_Feather: 0.0001
+    - _1stAnisoHighLightPower: 1
+    - _1stAnisoHighLightStrength: 0
+    - _1st_HighColorMapMaskOffset: 0
+    - _1st_HighColorMapMaskScaler: 0
+    - _1st_HighColor_Power: 0.134
+    - _1st_RimLight_Feather: 0
+    - _1st_RimLight_InsideMask: 0.0001
+    - _1st_RimLight_Power: 0.1
+    - _1st_Shade_Feather: 0.0001
+    - _1st_Shade_Step: 0.5
+    - _1st_ShiftTangent: 0
+    - _1st_SpecularMapMaskOffset: 0
+    - _1st_SpecularMapMaskScaler: 0
+    - _1st_Specular_Power: 0.134
+    - _2ndAnisoHighLightPower: 1
+    - _2ndAnisoHighLightStrength: 0
+    - _2nd_HighColorMapMaskOffset: 0
+    - _2nd_HighColorMapMaskScaler: 0
+    - _2nd_HighColor_Power: -0.98
+    - _2nd_RimLight_Feather: 0
+    - _2nd_RimLight_InsideMask: 0
+    - _2nd_RimLight_Power: 0.1
+    - _2nd_Shade_Feather: 0.0001
+    - _2nd_Shade_Step: 0
+    - _2nd_ShiftTangent: 0
+    - _2nd_SpecularMapMaskOffset: 0
+    - _2nd_SpecularMapMaskScaler: 0
+    - _2nd_Specular_Power: -0.98
+    - _Add_Antipodean_RimLight: 0
+    - _AnisotropicHighLightPowerHigh: 1
+    - _AnisotropicHighLightPowerLow: 1
+    - _AnisotropicHighLightStrengthHigh: 0
+    - _AnisotropicHighLightStrengthLow: 0
+    - _Ap_RimLight_Feather: 0
+    - _Ap_RimLight_Power: 0.1
+    - _BaseColor_Step: 0.5
+    - _BaseShade_Feather: 0.0001
+    - _Base_Speed: 0
+    - _BlurLevelMatCap: 0
+    - _BumpScale: 1
+    - _Clipping_Level: 0
+    - _ColorShift_Speed: 0
+    - _CullMode: 2
+    - _DstBlend: 0
+    - _EMISSIVE: 0
+    - _FakeTransparentWeight: 0.5
+    - _Farthest_Distance: 100
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HighColorMapMaskOffset: 0
+    - _HighColorMapMaskScaler: 0
+    - _HighColor_Power: 0.134
+    - _Inverse_Clipping: 0
+    - _Is_1st_RimLight_Addtive: 1
+    - _Is_2nd_RimLight_Addtive: 1
+    - _Is_BakedNormal: 0
+    - _Is_BlendAddToHiColor: 0
+    - _Is_BlendBaseColor: 0
+    - _Is_BlendBaseColorWeight: 1
+    - _Is_ColorShift: 0
+    - _Is_Filter_HiCutPointLightColor: 1
+    - _Is_LightColor_Ap_RimLight: 1
+    - _Is_LightColor_Base: 1
+    - _Is_LightColor_HighColor: 1
+    - _Is_LightColor_MatCap: 1
+    - _Is_LightColor_Outline: 1
+    - _Is_LightColor_RimLight: 1
+    - _Is_LightColor_Specular: 1
+    - _Is_NormalMapToBase: 0
+    - _Is_Ortho: 0
+    - _Is_OutlineMap: 0
+    - _Is_PingPong_Base: 0
+    - _Is_Skin: 0
+    - _Is_SpecularToHighColor: 0
+    - _Is_SpecularToSpecular: 1
+    - _Is_UseTweakHighColorOnShadow: 0
+    - _Is_UseTweakSpecularOnShadow: 0
+    - _Is_ViewCoord_Scroll: 0
+    - _Is_ViewShift: 0
+    - _LightDirection_MaskOn: 0
+    - _LightIntensityCache: 1
+    - _MatCap: 0
+    - _Metallic: 0
+    - _Mode: 0
+    - _Nearest_Distance: 0.5
+    - _OUTLINE: 0
+    - _Outline_Width: 0
+    - _PreZWrite: 0
+    - _RimLight: 0
+    - _RimLight_FeatherOff: 0
+    - _RimLight_InsideMask: 0.0001
+    - _RimLight_Power: 0.1
+    - _Rotate_EmissiveUV: 0
+    - _Scroll_EmissiveU: 0
+    - _Scroll_EmissiveV: 0
+    - _Set_SystemShadowsToBase: 1
+    - _ShadeColor_Step: 0
+    - _ShiftTangent: 0
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SpecularMapMaskOffset: 0
+    - _SpecularMapMaskScaler: 0
+    - _Specular_Power: -1
+    - _SrcBlend: 1
+    - _TweakHighColorOnShadow: 0
+    - _TweakMatCapOnShadow: 0
+    - _TweakSpecularOnShadow: 0
+    - _Tweak_1stShadingGradeMapLevel: 0
+    - _Tweak_1st_RimLightMaskLevel: 0
+    - _Tweak_2nd_RimLightMaskLevel: 0
+    - _Tweak_HighColor_Feather_Level: 0.998
+    - _Tweak_LightDirection_MaskLevel: 0
+    - _Tweak_MatCapMaskLevel: 0
+    - _Tweak_MatcapMaskLevel: 0
+    - _Tweak_ReceivedShadowsLevel: 0
+    - _Tweak_RimLightMaskLevel: 0
+    - _Tweak_Specular_Feather_Level: 0.998
+    - _Tweak_SystemShadowsLevel: 0
+    - _Tweak_transparency: 0
+    - _Use_1stShadeMapAlpha_As_ShadowMask: 0
+    - _Use_2ndUV_As_HighColorMapMask: 1
+    - _Use_2ndUV_As_SpecularMapMask: 1
+    - _Use_2nd_HighColor_OptMap: 1
+    - _Use_2nd_Specular_OptMap: 1
+    - _Use_Aniso_HighLight: 0
+    - _Use_As_Skin: 0
+    - _Use_Emissive: 0
+    - _Use_HighColor: 1
+    - _Use_Normal: 0
+    - _Use_OwnDirLight: 0
+    - _Use_SSS: 0
+    - _Use_Specular: 1
+    - _ZWrite: 1
+    - _ZWrite4Forward: 1
+    - _ZWrite4Trans: 1
+    m_Colors:
+    - _1st_RimLightColor: {r: 1, g: 1, b: 1, a: 1}
+    - _1st_ShadeColor: {r: 1, g: 1, b: 1, a: 1}
+    - _2nd_RimLightColor: {r: 1, g: 1, b: 1, a: 1}
+    - _2nd_ShadeColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Ap_RimLightColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorShift: {r: 0, g: 0, b: 0, a: 1}
+    - _Emissive_Color: {r: 0, g: 0, b: 0, a: 1}
+    - _EulerAnglesCache: {r: 150, g: 30, b: 0, a: 0}
+    - _HSVOffset: {r: 0, g: 1, b: 1, a: 0}
+    - _HighColor: {r: 1, g: 1, b: 1, a: 1}
+    - _LightColorChache: {r: 1, g: 1, b: 1, a: 1}
+    - _MatCapColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Outline_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _OwnDirectionalLightColor: {r: 1, g: 1, b: 1, a: 1}
+    - _OwnDirectionalLightDir: {r: 0, g: 0, b: 0, a: 0}
+    - _RimLightColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SkinSSSMulColor: {r: 0.7, g: 0, b: 0, a: 1}
+    - _Specular: {r: 1, g: 1, b: 1, a: 1}
+    - _ViewShift: {r: 0, g: 0, b: 0, a: 1}

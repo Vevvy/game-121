@@ -1,0 +1,439 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.16f1 (4016570cf34f) revision 4200023'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19043) 64bit Professional' Language: 'en' Physical Memory: 32689 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+E:/GAME-121 REPO/game-121/Basic FPS
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+49736
+Successfully changed project path to: E:/GAME-121 REPO/game-121/Basic FPS
+E:/GAME-121 REPO/game-121/Basic FPS
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [60992] Host "[IP] 192.168.4.47 [Port] 0 [Flags] 2 [Guid] 3850077423 [EditorId] 3850077423 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-EVAN) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [60992] Host "[IP] 192.168.4.47 [Port] 0 [Flags] 2 [Guid] 3850077423 [EditorId] 3850077423 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-EVAN) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 64.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.16f1 (4016570cf34f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/GAME-121 REPO/game-121/Basic FPS/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2080 SUPER (ID=0x1e81)
+    Vendor:   NVIDIA
+    VRAM:     8001 MB
+    Driver:   31.0.15.2756
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56208
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006567 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 79.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.498 seconds
+Domain Reload Profiling:
+	ReloadAssembly (498ms)
+		BeginReloadAssembly (57ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (355ms)
+			LoadAssemblies (55ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (69ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (229ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (79ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (109ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003685 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\GAME-121 REPO\game-121\Basic FPS\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\GAME-121 REPO\game-121\Basic FPS\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.753 seconds
+Domain Reload Profiling:
+	ReloadAssembly (754ms)
+		BeginReloadAssembly (84ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (583ms)
+			LoadAssemblies (60ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (183ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (284ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (180ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3361 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (113.7 KB). Loaded Objects now: 3818.
+Memory consumption went from 115.6 MB to 115.5 MB.
+Total: 2.341600 ms (FindLiveObjects: 0.161900 ms CreateObjectMapping: 0.082500 ms MarkObjects: 2.030900 ms  DeleteObjects: 0.065800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003289 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\GAME-121 REPO\game-121\Basic FPS\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\GAME-121 REPO\game-121\Basic FPS\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 83.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.334 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2335ms)
+		BeginReloadAssembly (364ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (162ms)
+		EndReloadAssembly (1559ms)
+			LoadAssemblies (153ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (951ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (433ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (84ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (222ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Shader '.poiyomi/Patreon/Particle2/Outline Transparent': fallback shader 'Toon/Lit Cutout (Double)' not found
+Shader '.poiyomi/Patreon/Tessellation/Outlines Cutout': fallback shader 'Toon/Lit Cutout (Double)' not found
+Shader '.poiyomi/Patreon/Particle2/Transparent': fallback shader 'Toon/Lit Cutout (Double)' not found
+Shader '.poiyomi/Patreon/Wireframe Transparent': fallback shader 'Toon/Lit Cutout (Double)' not found
+Shader '.poiyomi/Patreon/Particle2/Cutout': fallback shader 'Toon/Lit Cutout (Double)' not found
+Shader '.poiyomi/Patreon/Tessellation/Cutout': fallback shader 'Toon/Lit Cutout (Double)' not found
+Shader '.poiyomi/Patreon/Particle2/Outline Cutout': fallback shader 'Toon/Lit Cutout (Double)' not found
+Shader '.poiyomi/Patreon/Tessellation/Transparent': fallback shader 'Toon/Lit Cutout (Double)' not found
+Shader '.poiyomi/Patreon/Wireframe Cutout': fallback shader 'Toon/Lit Cutout (Double)' not found
+Shader '.poiyomi/Patreon/Particle2/Cutout': fallback shader 'Toon/Lit Cutout (Double)' not found
+Shader '.poiyomi/Patreon/Tessellation/Transparent': fallback shader 'Toon/Lit Cutout (Double)' not found
+Shader '.poiyomi/Patreon/Wireframe Transparent': fallback shader 'Toon/Lit Cutout (Double)' not found
+Shader '.poiyomi/Patreon/Particle2/Transparent': fallback shader 'Toon/Lit Cutout (Double)' not found
+Shader '.poiyomi/Patreon/Tessellation/Cutout': fallback shader 'Toon/Lit Cutout (Double)' not found
+Shader '.poiyomi/Patreon/Particle2/Outline Transparent': fallback shader 'Toon/Lit Cutout (Double)' not found
+Shader '.poiyomi/Patreon/Tessellation/Outlines Cutout': fallback shader 'Toon/Lit Cutout (Double)' not found
+Shader '.poiyomi/Patreon/Particle2/Outline Cutout': fallback shader 'Toon/Lit Cutout (Double)' not found
+Shader '.poiyomi/Patreon/Wireframe Cutout': fallback shader 'Toon/Lit Cutout (Double)' not found
+Refreshing native plugins compatible for Editor in 1.41 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3434 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 44 unused Assets / (8.7 MB). Loaded Objects now: 3874.
+Memory consumption went from 132.5 MB to 123.8 MB.
+Total: 4.697100 ms (FindLiveObjects: 0.180500 ms CreateObjectMapping: 0.068400 ms MarkObjects: 2.042900 ms  DeleteObjects: 2.404800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1072289.045253 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/MatcapLatex.png
+  artifactKey: Guid(18bc3c3625266ef4b8fee18269619212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/MatcapLatex.png using Guid(18bc3c3625266ef4b8fee18269619212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8de597b84de0723b90371111cb1b983a') in 0.071803 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (9).png
+  artifactKey: Guid(f712d8b4373eba943baf1989e0aeb15f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (9).png using Guid(f712d8b4373eba943baf1989e0aeb15f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0c78193efac7f4c7cba9844cafb2e40') in 0.008913 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (7).jpg
+  artifactKey: Guid(a24496aa77800b24c960741cb4c32203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (7).jpg using Guid(a24496aa77800b24c960741cb4c32203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28969772616539249d238a483da381cb') in 0.012773 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (9).jpg
+  artifactKey: Guid(612476841a11fb94ca01633cc01282df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (9).jpg using Guid(612476841a11fb94ca01633cc01282df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f17218339dbf9b9f0517d9f77551f39') in 0.009238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (4).jpg
+  artifactKey: Guid(ad62a319e566fdd4c8c6441b7250ba61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (4).jpg using Guid(ad62a319e566fdd4c8c6441b7250ba61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fbe9e64e5a801b7bad334e44633ad5f') in 0.009024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (5).png
+  artifactKey: Guid(caf2f79a23000a84599416e236287616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (5).png using Guid(caf2f79a23000a84599416e236287616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f83d72bbbacacc0971c7af9a4b8b383') in 0.009752 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (13).png
+  artifactKey: Guid(bd0cc922d6a571e438eee900fe57a5b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (13).png using Guid(bd0cc922d6a571e438eee900fe57a5b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aa46268393cf6c0711aa4d36c599fba') in 0.009014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (4).png
+  artifactKey: Guid(2b5e0b031839238468f548ae5e30d127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (4).png using Guid(2b5e0b031839238468f548ae5e30d127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22258c1171a997000737cdb173015293') in 0.007542 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap.png
+  artifactKey: Guid(b66c2d17fdb7f5a4197a759142e82c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap.png using Guid(b66c2d17fdb7f5a4197a759142e82c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '715811fddefc5616fde161652cd61720') in 0.009927 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (1).jpg
+  artifactKey: Guid(22e746c3d444b3c43b687229e8263cfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (1).jpg using Guid(22e746c3d444b3c43b687229e8263cfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4792023ef969e2b0462e8d1750fd8db1') in 0.007335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (10).jpg
+  artifactKey: Guid(0e0d81b6be9daaf459ba80b0e93f2ce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (10).jpg using Guid(0e0d81b6be9daaf459ba80b0e93f2ce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2298afa141f81ec5226ea5ec5d55caac') in 0.009022 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (13).jpg
+  artifactKey: Guid(64eda4a30094fd24198f44b0c9d41208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (13).jpg using Guid(64eda4a30094fd24198f44b0c9d41208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dda774be268298a89b40537c11e6050') in 0.007042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (11).jpg
+  artifactKey: Guid(82136e8697de6eb4394177338725876f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (11).jpg using Guid(82136e8697de6eb4394177338725876f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e46a8748d2dd90fd50622cb502a2d159') in 0.008535 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (2).png
+  artifactKey: Guid(7960f3b319c2a4e4baad0c57ba8f9d48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (2).png using Guid(7960f3b319c2a4e4baad0c57ba8f9d48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9e9879c88e57b40d197eb543e31c39b') in 0.009658 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.771519 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (14).jpg
+  artifactKey: Guid(ee08a1bb6cc9ce44284b711477c79df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (14).jpg using Guid(ee08a1bb6cc9ce44284b711477c79df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc108ed8429b124644704896222e8a2b') in 0.009461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (16).jpg
+  artifactKey: Guid(507ec010e33595d4ca0fadcc45844169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (16).jpg using Guid(507ec010e33595d4ca0fadcc45844169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d6446ff2c456274f0ac25afc6dad0fc') in 0.010474 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (15).jpg
+  artifactKey: Guid(3d2cce892a030694d9a72a92dad5e82f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (15).jpg using Guid(3d2cce892a030694d9a72a92dad5e82f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc4d4bc5c5716b9db82422d4944685e7') in 0.008716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.402731 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (17).jpg
+  artifactKey: Guid(bca7518f2d385c340b84b107c599abe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (17).jpg using Guid(bca7518f2d385c340b84b107c599abe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b270fadc5b0267614bfbb4834261c7f') in 0.008908 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (18).png
+  artifactKey: Guid(55b34dc98a1beda49a9004a81b46af61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (18).png using Guid(55b34dc98a1beda49a9004a81b46af61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '927ae04c6f92a92bfd5b036abde66fd6') in 0.009706 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (18).jpg
+  artifactKey: Guid(7bd1664c669e2e94683e48d235b1bb27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (18).jpg using Guid(7bd1664c669e2e94683e48d235b1bb27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41d6e861ced6277783fac650fffabf04') in 0.009285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.044515 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (19).jpg
+  artifactKey: Guid(97b53db9a7bc7a64181a216a90907e39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (19).jpg using Guid(97b53db9a7bc7a64181a216a90907e39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '807409ff370c8ab61209cb216f454212') in 0.010181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (20).png
+  artifactKey: Guid(5f94789d7f6da9b449e4cb1139ebecc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (20).png using Guid(5f94789d7f6da9b449e4cb1139ebecc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4463d2c0d4949cfb31a2eb240b4e2f7c') in 0.007777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (20).jpg
+  artifactKey: Guid(9069ac80b6926394eaefe7ef40fafcfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (20).jpg using Guid(9069ac80b6926394eaefe7ef40fafcfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5cba2234ebd470845ec282d2c0f2bea') in 0.007151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.500255 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (22).jpg
+  artifactKey: Guid(760bc4ee5d362ff4da1ba3ca0e2efc76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (22).jpg using Guid(760bc4ee5d362ff4da1ba3ca0e2efc76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de100a6d40c59bdc7ea0399c5d418ab1') in 0.009258 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (23).jpg
+  artifactKey: Guid(cabfaa2a3d851a448929f9ef1807bb05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (23).jpg using Guid(cabfaa2a3d851a448929f9ef1807bb05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4afe3d29d2f16f01ef1454e474af1d6b') in 0.011898 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.757102 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (25).jpg
+  artifactKey: Guid(0585906ec08a78346b9fe60a303e12ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (25).jpg using Guid(0585906ec08a78346b9fe60a303e12ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '596901b0d6bfb4c9ba0afc114dfcf477') in 0.009318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (26).png
+  artifactKey: Guid(be401e0134922d1429f57d073a05f469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (26).png using Guid(be401e0134922d1429f57d073a05f469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14ee8c634974239b840def6688e29dec') in 0.009578 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.333847 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (27).png
+  artifactKey: Guid(57b8918006ce46f478039228a2880c63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (27).png using Guid(57b8918006ce46f478039228a2880c63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f09454620da3b979e304e1245f5d219b') in 0.027551 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (28).png
+  artifactKey: Guid(3eac3478dda6e6d42860167a61d0c39e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (28).png using Guid(3eac3478dda6e6d42860167a61d0c39e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08806d875d99a4f9dc740ee243273834') in 0.006735 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.309186 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (30).jpg
+  artifactKey: Guid(0108fa829c99c56478b917b81937622c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (30).jpg using Guid(0108fa829c99c56478b917b81937622c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6123be4470080f31a06a905e162f4fd') in 0.037772 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.237450 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (32).png
+  artifactKey: Guid(3c1b5b63bfcf1d64a85ae92a997559ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (32).png using Guid(3c1b5b63bfcf1d64a85ae92a997559ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6027565657d72479146e717a89fbdffd') in 0.009107 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.047401 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (36).png
+  artifactKey: Guid(19d43460f5d9e824ca794439434578de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (36).png using Guid(19d43460f5d9e824ca794439434578de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b797a2e38c6d21d0d4820ac410af9a7') in 0.011320 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (38).png
+  artifactKey: Guid(96af20914dee77340aa59723bee8417f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (38).png using Guid(96af20914dee77340aa59723bee8417f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cab252682606dcd5cf6bd7226cffda6') in 0.010739 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
